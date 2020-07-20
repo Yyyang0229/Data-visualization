@@ -56,6 +56,7 @@ header {
     .colum:nth-child(2) {
         flex: 5;
         margin: 0 .125rem .1875rem;
+        overflow: hidden;
     }
     .panel {
         position: relative;
@@ -117,10 +118,14 @@ header {
             line-height: .6rem;
             text-align: center;
             font-weight: 400;
+            a {
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 .125rem;
+            }
         }
         .chart {
             height: 3rem;
-            background-color: pink;
         }
     }
 }
@@ -255,3 +260,15 @@ header {
         }
     }
 }
+
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+    html {
+      font-size: 42px !important;
+    }
+  }
+@media screen and (min-width: 1920px) {
+    html {
+      font-size: 80px !important;
+    }
+  }
